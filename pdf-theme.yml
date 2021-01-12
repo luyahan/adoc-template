@@ -1,21 +1,24 @@
 extends: default
 font:
   catalog:
+    merge: true
     SourceHanSans:
-      normal: /mnt/c/Users/luyahan/source-han-serif-ttf/SubsetTTF/CN/SourceHanSerifCN-Regular.ttf
-      bold: /mnt/c/Users/luyahan/source-han-serif-ttf/SubsetTTF/CN/SourceHanSerifCN-Bold.ttf
-      italic: /mnt/c/Users/luyahan/source-han-serif-ttf/SubsetTTF/SourceSerifPro-It.ttf
-      bold_italic: /mnt/c/Users/luyahan/source-han-serif-ttf/SubsetTTF/SourceSerifPro-BoldIt.ttf
-    Noto Serif:
-      normal: GEM_FONTS_DIR/notoserif-regular-subset.ttf
-      bold: GEM_FONTS_DIR/notoserif-bold-subset.ttf
-      italic: GEM_FONTS_DIR/notoserif-italic-subset.ttf
-      bold_italic: GEM_FONTS_DIR/notoserif-bold_italic-subset.ttf
-    M+ 1mn:
-      normal: GEM_FONTS_DIR/mplus1mn-regular-subset.ttf
-      bold: GEM_FONTS_DIR/mplus1mn-bold-subset.ttf
-      italic: GEM_FONTS_DIR/mplus1mn-italic-subset.ttf
-      bold_italic: GEM_FONTS_DIR/mplus1mn-bold_italic-subset.ttf
+      normal: SourceHanSerifCN-Regular.ttf
+      bold: SourceHanSerifCN-Bold.ttf
+      italic: SourceSerifPro-It.ttf
+      bold_italic: SourceSerifPro-BoldIt.ttf
 base:
   font-family: SourceHanSans
-  
+
+header:
+  height: 0.75in
+  image-vertical-align: 10
+  line-height: 1
+  recto:
+    left:
+      content: image:logo.png[width=80]
+    right:
+      content: 'v{revnumber} {docdate}'
+  verso:
+    left:
+      content: $header-recto-left-content

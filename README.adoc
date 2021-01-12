@@ -1,20 +1,54 @@
 = 陆亚涵
 Lu Yahan <luyahan@qq.com>
-v1.0, 2014-01-01
+v0.1
+:description: This is a hello world for a adoc
 :toc:
-:imagesdir: assets/images
-:homepage: http://asciidoctor.org
+:toc-title: 目录
+:toclevels: 3
+:homepage: https://isrc.iscas.ac.cn/
+:organization: isrc
+:page-layout: base
+// Settings:
+:experimental:
+:reproducible:
+:icons: font
+:listing-caption: Listing
+:title-logo-image: image:/mnt/c/Users/luyahan/adoc-template/logo.png[pdfwidth=4.25in,align=center]
+:manname: Asciidoctor
+:mantitle: d
 
+[abstract]
+{description}
+
+<<<
 == 陆亚涵
 ubies are red, +
 Topazes are blue.
+Available now at icon:amazon[].
 
+
+NOTE: An admonition paragraph draws the reader's attention to
+auxiliary information.
+Its purpose is determined by the label
+at the beginning of the paragraph.
+
+Here are the other built-in admonition types:
+
+TIP: Pro tip...
+
+IMPORTANT: Don't forget...
+
+WARNING: Watch out for...
+
+CAUTION: Ensure that...
 
 _italic phrase_
 
 __i__talic le__tt__ers
 
 *bold phrase*
+
+<<<
 
 **b**old le**tt**ers
 
@@ -29,3 +63,5 @@ __i__talic le__tt__ers
 `*monospace bold phrase*` and le``**tt**``ers
 
 `*_monospace bold italic phrase_*` and le``**__tt__**``ers
+
+<<<
